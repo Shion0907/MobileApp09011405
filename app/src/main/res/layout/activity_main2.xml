@@ -11,7 +11,7 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="明示的Intent"
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,44 +20,34 @@
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="暗黙的Intent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button4"
         app:layout_constraintTop_toTopOf="@id/button4" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <EditText
+        android:id="@+id/editTextText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="126dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="32dp"
-        app:layout_constraintTop_toBottomOf="@id/button4"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="104dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button4" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <Button
+        android:id="@+id/button18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="188dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="32dp"
-        app:layout_constraintTop_toBottomOf="@id/textView4"
-        app:layout_constraintStart_toStartOf="@id/textView4"/>
+        android:text="送信"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="104dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintTop_toTopOf="@id/editTextText2"
+        app:layout_constraintStart_toEndOf="@id/editTextText2"/>
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="71dp"
-        tools:layout_editor_absoluteY="258dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="32dp"
-        app:layout_constraintTop_toBottomOf="@id/textView5"
-        app:layout_constraintStart_toStartOf="@id/textView5"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
